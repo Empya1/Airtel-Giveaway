@@ -1,0 +1,156 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+.show-text{
+    animation-name: showtext;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+}
+
+.hidden{
+    transform: translateX(-500px);
+    opacity: 0;
+}
+
+@keyframes showtext {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0.05;
+    }
+    
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.overflowhidden{
+    overflow-x: hidden;
+}
+
+.divmax-60{
+    max-width: 80%;
+}
+
+#phonenumber{
+    
+}
+
+
+.hide-card{
+    opacity: 0.1;
+    transition: opacity 3s;
+}
+
+.trans-left{
+    transform: translateX(-100px);
+    transition: transform 2s;
+}
+
+.trans-right{
+    transform: translateX(100px);
+    transition: transform 2s;
+}
+
+
+
+
+.logo{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.blur {
+     backdrop-filter: blur(5px);
+    
+}
+
+.round-10{
+    border-radius: 10%;
+}
+
+.line-height-150{
+    line-height: 300px;
+}
+
+.gradient {
+  background-image: linear-gradient(
+    115deg,
+    hsl(0deg 100% 50%) 0%,
+    hsl(0deg 93% 56%) 20%,
+    hsl(0deg 83% 62%) 40%,
+    hsl(0deg 77% 69%) 60%,
+    hsl(0deg 74% 76%) 80%,
+    hsl(0deg 68% 84%) 100%
+  );
+}
+
+.long-bg{
+    max-height: 50vh;
+}
+
+.bg-img1{
+    width:100%;
+    max-height:400px;
+    filter:grayscale(50%);
+    filter: brightness(30%);
+    
+}
+
+.contact-btn{
+    border:0;
+    border-radius: 25px;
+    font-size:25px;
+    color: #ffffff;
+    background:none;
+}
+
+.check-icon{
+    font-size:25px;
+}
+
+.rubik{
+    font-family: Rubik;
+    
+}
+
+.font-resp{
+    font-size: 80px;
+}
+
+.font-coarse{
+    font-size: 25px;
+    font-family: cursive, Helvetica;
+}
+
+.border-u0{
+   border:none;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.22), 0 0px 0px rgba(0,0,0,0.22);
+}
+
+.info-card{
+    border: none;
+}
+
+.lsn {
+    list-style: none;
+}
+
+.jcsb{
+    justify-content: space-between;
+}
+
+.round-25{
+    border-radius:25px;
+}
+
+
+@media only screen and (min-width: 768px){
+
+   
+    
+}
