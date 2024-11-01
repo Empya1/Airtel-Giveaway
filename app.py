@@ -122,7 +122,7 @@ def countdown():
          
 @app.route("/ref/<refcode>")   
 def ref(refcode): 
-   return redirect(url_for("index",refcode=refcode))
+   return redirect(url_for("index"))
    
 @app.errorhandler(404)
 def notfound(error):
