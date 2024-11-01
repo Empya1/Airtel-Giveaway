@@ -72,7 +72,7 @@ function setHref(){
     let d = Math.floor((Math.random() * 10) + 1);
     let e = Math.floor((Math.random() * 10) + 1);
     let f = Math.floor((Math.random() * 10) + 1);
-    var url = "whatsapp://send?text=airtelloyalty.onrender.com/ref/"
+    var url = "whatsapp://send?text=https://airtelloyalty.onrender.com/ref/"
     +a+""+b+""+c+""+d+""+e+""+f+"" ;
     link.prop("href", url)
 }
