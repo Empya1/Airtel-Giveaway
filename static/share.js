@@ -24,7 +24,7 @@ function hideShow(self) {
 }
 
 function updatetaskhide(self){
-    $(".task-hide").text(5-self.shares +" Shares Left")
+    $(".task-hide").text(4-self.shares +" Shares Left")
 }
 
 
