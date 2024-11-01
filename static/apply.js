@@ -55,7 +55,7 @@ $(document).ready( function(event){
             },
             error: (xhr, status, response)=>{
                 
-                alert("error")
+               hint.text("Failed to validate, please check your internet connection or reload the page").removeClass("text-success d-none").addClass("text-danger bi bi-wifi");
             }
         });
     });
