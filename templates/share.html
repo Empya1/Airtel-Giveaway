@@ -1,0 +1,30 @@
+{%extends "base.html"%}
+
+{%block title%} Airtel Giveaway - Share With Friends {%endblock%}
+
+{%block content%}
+
+ <div class="container text-center">
+  <div class="container mt-5 round-25 shadow-lg pt-5 text-center">
+      <span class="bi bi-clipboard text-danger text-center font-resp task-icon"></span></h5>
+      <h1 class="text-center rubik mt-5 bi bi-task task-status">1 Qualification Task Available</h1>
+      
+      <div class="container text-center mt-2">
+          <span class="text-secondary text-center mb-5 task-hide"><b>{{usernumber}}</b> Share your link to <b>Groups and Friends to continue</b>. You need atleast shares to continue</span>
+          <br>
+          <div class="container py-5">
+              <div class="container mb-5">
+                  <span class="countdown text-secondary font-weight-bold font-weight-bold" style="font-size:28px;">Next Share in 20s</span>
+              </div>
+              <br>
+              <a class="hide-task" id="sendlink"  href={{ref}} ><button class="share btn btn-danger bi bi-whatsapp round-25 px-5 py-2" id="sharebtn"> Share Link</button></a>
+              <a class="d-none"  id="continue" href={{link}} ><button class="continue btn btn-success bi round-25 px-5 py-2"> Continue</button></a>
+          </div>
+      </div>
+  </div>
+ </div>
+    
+    
+
+<script src="{{url_for("static", filename="share.js")}}"></script>
+{%endblock%}

@@ -1,0 +1,87 @@
+{%extends "base.html"%}
+
+{%block title%}Airtel Annual Customer Appreciation Data Giveaway{%endblock%}
+
+{%block content%}
+   <div class="card" style="min-height:100%;" class="m-0 p-0">
+        
+            <img src="{{url_for("static", filename="airtelpromo.jpeg")}}" alt="airtel promo" class="img-fluid card-img-top bg-img1 mx-0 ">
+            <div class="card-img-overlay text-center">
+                <h1 class="py-5 my-5 text-light rubik show-text hidden">Airtel 25GB Free Data Giveaway</h1>
+                <button class="btn btn-danger text-white round-25 btn-block rubik btn-lg d-none" onclick="">Get Now</button>
+            </div>
+        </div>
+        
+    </div>
+    
+<!-- STOP HERE -->    
+    
+    <div class="container mt-5">
+        <main class="row justify-content-sm-around">
+            
+            <div class="col-sm-12 col-md-6 col-md-3 text-center overflowhidden">
+                <div class="card border-0  my-3 py-3 hide-card trans-left">
+                    <span class="bi bi-phone font-resp text-danger" id="colt"></span>
+                    <h3 class="rubik">Free 25GB</h3>
+                    <p class="text-secondary">Only Validated Airtel Numbers can qualify to recieve 25GB Worth of Data which will be credited to <span class="text-danger">100,000</span> selected Airtel phonenumbers on the <span class="text-danger">{{due_date}}</span></p>
+                </div>
+                
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-md-3 text-center overflowhidden">
+                <div class="card border-0 my-3 py-3 hide-card trans-right">
+                    <span class="bi bi-check font-resp text-danger"></span>
+                    <h3 class="rubik">Valid For 6 months</h3>
+                    <p class="text-secondary">The 25GB Data will be valid for 6 months after which it will expire</p>
+                </div>
+                
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-md-3 text-center overflowhidden">
+                <div class="card border-0 my-3 py-3 hide-card trans-left">
+                    <span class="bi bi-trophy font-resp text-danger"></span>
+                    <h3 class="rubik">Giveaway ends on the {{due_date}}</h3>
+                    <p class="text-secondary">Airtel users are expected to apply before the {{due_date}} after which application will end</p>
+                </div>
+                
+            </div>
+            
+            
+            
+            <div class="col-sm-12 col-md-6 col-md-3 text-center overflowhidden">
+                <div class="card border-0 my-3 py-3 hide-card trans-right">
+                    <span class="bi bi-patch-check-fill font-resp text-danger"></span>
+                    <h3 class="rubik">Apply And Complete Verification</h3>
+                    <p class="text-secondary">Your Qualification process will begin after your phone number has been verified successfully</p>
+                </div>
+                
+            </div>
+            
+            <div class="col-sm-12 col-md-6 col-md-3 text-center overflowhidden">
+                <div class="card border-0 my-3 py-3 hide-card">
+                    <span class="bi bi-person-badge font-resp text-danger"></span>
+                    <h3 class="rubik">Share To Friends</h3>
+                    <p class="text-secondary rubik">Share your referral link to friends and groups. The more you share your link, the higher your chances of being selected as one of the <span class="font-weight-bolder text-danger">100,000</span> beneficiaries</p>
+                </div>
+                
+            </div>
+            
+           
+        </main>
+        
+        <div class="container-fluid text-center justify-content-sm-around">
+            <div class="row justify-content-sm-around">
+                <div class="col-sm-12 col-md-6 col-md-3 text-center overflowhidden justify-content-sm-around">
+                    <div class="card border-0 my-3 py-3 hide-card mx-auto">
+                        <span class="bi bi-stopwatch font-resp text-danger"></span>
+                        <h3 class="rubik">Apply On Time To Get Yours</h3>
+                        <a class="" href="{{url_for("register")}}"><button class="btn btn-danger btn-group-lg w-100 rubik text-light round-25 mt-4">Apply Now</button></a>
+                    </div>       
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+{%endblock%}
+    
