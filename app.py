@@ -18,7 +18,7 @@ annoying_ad = Markup("""<script src="https://alwingulla.com/88/tag.min.js" data-
 
 render = partial(render_template, link=link, due_date=due_date)
 
-showornot = lambda : random.choice([0,1,1])
+showornot = lambda : random.choice([0,0])
 
 
 class AirtelParser:
